@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://10.101.9.33:3001/Views/static_resume -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>TEERUCH</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./index_files/w3.css">
+<link rel="stylesheet" href="./index_files/timeline.css">
+<script src="./index_files/jquery.min.js.download"></script>
+
+<script type="text/javascript">
+	function animateScrolling(i_target) {
+		$('html, body').animate({
+			scrollTop : $("#" + i_target).offset().top
+		}, 500);
+	}
+
+</script>
+</head><body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a onclick="animateScrolling(&#39;home&#39;);" class="w3-bar-item w3-button"><b>HOME</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a onclick="animateScrolling(&#39;summary&#39;);" class="w3-bar-item w3-button">Summary</a>
+      <a onclick="animateScrolling(&#39;programming_skills&#39;);" class="w3-bar-item w3-button">Skills</a>
+      <a onclick="animateScrolling(&#39;timeline&#39;);" class="w3-bar-item w3-button">Timeline</a>
+      <a onclick="animateScrolling(&#39;education&#39;);" class="w3-bar-item w3-button">Education</a>
+      <a onclick="animateScrolling(&#39;contact&#39;);" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="./index_files/home_2.png" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>MR</b></span> <span class="w3-hide-small w3-text-light-grey">TEERUCH PRABSUTHA</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+	<div class="w3-container w3-padding-32" id="summary">
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Summary</h3>
+		<p>•	Seven years of experience java programmer.</p>
+		<p>•	Four years of experience system analyst.</p>
+		<p>•	Exceptional knowledge of  JAVA and J2EE Design patterns.</p>
+		<p>•	Software development Teamwork with agile process</p>
+	  </div>
+
+  <!-- Project Section -->
+	<div class="w3-container w3-padding-32" id="programming_skills">
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Programming skills</h3>
+	</div>
+
+	<div class="w3-row-padding">
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			<h3>Programming Language</h3>
+			<img src="./index_files/logo_java.gif" alt="Dan" style="width:180px">
+			<p>JAVA, Javascript, DOM, HTML, PHP, JSP</p>
+		</div>
+		
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			  <h3>Programming Concepts</h3>
+			  <img src="./index_files/tdd.png" alt="Dan" style="width:100px">
+			  <p>J2SE, Design Patterns, Acceptance test-driven development, Refactor code</p>
+		</div>		
+		
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			  <h3>Frameworks</h3>
+			  <img src="./index_files/spring.png" alt="Dan" style="width:200px">
+			  <p>JSF, Struts, String MVC, Hibernate, JUnit, Robotframework.</p>
+		</div>
+		
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			  <h3>Development Tools</h3>
+			  <img src="./index_files/eclipse.png" alt="Dan" style="width:200px">
+			  <p>JasperReports, NetBeans, JDeveloper, Eclipse, Apache Maven,Apache JMeter, PL/SQL, Toad, RestFul and SOAP API</p>
+		</div>
+		
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			  <h3>Version control tools</h3>
+			  <img src="./index_files/git.png" alt="Dan" style="width:200px">
+			  <p>•	SVN, CVS, GIT</p>
+		</div>
+		
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			  <h3>Application server</h3>
+			  <img src="./index_files/jboss.png" alt="Dan" style="width:150px">
+			  <p>JBoss, WebSphere, Tomcat</p>
+		</div>
+		
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			  <h3>Database</h3>
+			  <img src="./index_files/oracle.png" alt="Dan" style="width:200px">
+			  <p>Oracle, MySQL, SQL Server.</p>
+		</div>
+		
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			  <h3>Beginner skill</h3>
+			  <img src="./index_files/nodejs_logo.jpg" alt="Dan" style="width:200px">
+			  <p>NodeJS, AngularJS, MongoDB</p>
+		</div>
+	</div>
+  
+
+  <div class="w3-container w3-padding-32" id="timeline">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Timeline</h3>
+    <div id="div_timeline" class="timeline ng-scope" ng-controller="timelineController">
+
+
+				<!-- ngRepeat: timeline in timelines --><div ng-repeat="timeline in timelines" class="entry ng-scope">
+					<div class="title">
+						<h3 class="ng-binding">Jun 2016-Present</h3>
+						<p class="ng-binding">System analyst , Assistance manager</p>
+					</div>
+					<div class="body">
+						<p class="ng-binding">Ayudhya capital services co. ltd. (AYCAP).</p>
+						<ul>
+							<!-- ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Domain expert for operation process.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Analyst and design development cycle.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Local resource management.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Prepare Functional and technical specification.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Consult business.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Project : Team process improments.</li><!-- end ngRepeat: resp in timeline.responsibilities -->
+						</ul>
+					</div>
+				</div><!-- end ngRepeat: timeline in timelines --><div ng-repeat="timeline in timelines" class="entry ng-scope">
+					<div class="title">
+						<h3 class="ng-binding">Feb 2014-May 2016</h3>
+						<p class="ng-binding">Programmer</p>
+					</div>
+					<div class="body">
+						<p class="ng-binding">Extend resource consulting Co., Ltd. Onsite  Ayudhya capital services Co., ltd. (AYCAP).</p>
+						<ul>
+							<!-- ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Developing program from System Analyst Design process.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">System Analyst</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Analyzing, designing and implementing information systems.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Document requirements or contribute to user manuals.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Write technical requirements from a critical phase.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Plan a system flow from the ground up.</li><!-- end ngRepeat: resp in timeline.responsibilities -->
+						</ul>
+					</div>
+				</div><!-- end ngRepeat: timeline in timelines --><div ng-repeat="timeline in timelines" class="entry ng-scope">
+					<div class="title">
+						<h3 class="ng-binding">Feb 2014-Jan 2014</h3>
+						<p class="ng-binding">Programmer</p>
+					</div>
+					<div class="body">
+						<p class="ng-binding">Agilitech Co., Ltd.</p>
+						<ul>
+							<!-- ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Developing program from System Analyst Design process.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Analyzing, designing and implementing information systems.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Write technical requirements from a critical phase.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Plan a system flow from the ground up.</li><!-- end ngRepeat: resp in timeline.responsibilities -->
+						</ul>
+					</div>
+				</div><!-- end ngRepeat: timeline in timelines -->
+
+				<div ng-repeat="timeline in timelines" class="entry ng-scope">
+					<div class="title">
+						<h3 class="ng-binding">Oct 2012 – Mar 2013</h3>
+						<p class="ng-binding">Programmer</p>
+					</div>
+					<div class="body">
+						<p class="ng-binding">Advance Systems Consulting Co., Ltd. Onsite at Soft Square Group Company</p>
+						<ul>
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Developing program from System Analyst Design process.</li>
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Developing program by using Java/JSP/ExtJs,JDBC ,Spring Framework,Hibernate Framework </li>
+						</ul>
+					</div>
+				</div>
+
+				<div ng-repeat="timeline in timelines" class="entry ng-scope">
+					<div class="title">
+						<h3 class="ng-binding">July 2012 – Sep 2012 </h3>
+						<p class="ng-binding">Programmer Analyst</p>
+					</div>
+					<div class="body">
+						<p class="ng-binding">K.Stone Co., Ltd. Onsite AIS</p>
+						<ul>
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Developing program from System Analyst Design process.</li>
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Developing program by using Java/JSP/Richface ,Spring Framework,Hibernate Framework , jBoss Application Server. </li>
+						</ul>
+					</div>
+				</div>
+				
+				<div ng-repeat="timeline in timelines" class="entry ng-scope">
+					<div class="title">
+						<h3 class="ng-binding">Jun 2010 – Jun 2012 </h3>
+						<p class="ng-binding">Software developer</p>
+					</div>
+					<div class="body">
+						<p class="ng-binding">Cloud Computing solution Co., Ltd.</p>
+						<ul>
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Developing program from System Analyst Design process.</li>
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Simulate and solve the software’s problem. </li>
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Install, configure, monitor and  troubleshoot Windows Server and Linux Server. </li>
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Windows Server and Linux Server administrator. </li>
+						</ul>
+					</div>
+				</div>
+				
+				<div ng-repeat="timeline in timelines" class="entry ng-scope">
+					<div class="title">
+						<h3 class="ng-binding">Sep 2009 – Dec 2009 </h3>
+						<p class="ng-binding">Assistant researchers</p>
+					</div>
+					<div class="body">
+						<p class="ng-binding">Institute of Field Robotics (FIBO) </p>
+						<ul>
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Student trainee.</li>
+						</ul>
+					</div>
+				</div>	
+				
+			</div>
+  </div>
+   <div class="w3-container w3-padding-32" id="education">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Education &amp; Training</h3>
+    <div class="w3-row-padding ">
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			<h3>Bachelor’s Degree – Computer Engineering </h3>
+			<img src="./index_files/sut.gif" alt="Dan" style="width:100px">
+			<p class="w3-opacity">Jun 2006 – Feb 2010</p>
+			
+			<p>Suranaree University of Technology </p>
+		</div>
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			<h3>Designing Scalable Web Application</h3>
+			<img src="./index_files/sw_park.jpg" alt="Dan" style="width:200px">
+			<p class="w3-opacity">Software park, Jun 2017</p>
+			<p>Scalable application for supports large transactions to more uses application.</p>
+		</div>
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			<h3>Management Essentials Program</h3>
+			<img src="./index_files/KrungsriConsumerAcademy.jpg" alt="Dan" style="width:50%">
+			<p class="w3-opacity">Krungsri Consumer Academe, Apr 2017</p>
+			<p>Role responsibility of management/Principle management role/Techniques for managing differences in interpersonal communication.</p>
+
+		</div>
+	</div>
+  </div>
+	
+	<div class="w3-container w3-padding-32" id="contact">
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+		<div>
+			<img src="./index_files/home.png" alt="Dan" style="width:50px;float: left;margin-right: 20px;">
+			<p style="padding:8px">525/409/41 Ghaus Condominium , Pornswang 11 Rt. Santikam 4, Bearing, Mueng Samudprakran 10270</p>
+		</div>
+		
+		<div>
+			<img src="./index_files/birthdate.png" alt="Dan" style="width:50px;float: left;margin-right: 20px;">
+			<p style="padding:8px">8 June 1988</p>
+		</div>
+		
+		<div>
+			<img src="./index_files/email.png" alt="Dan" style="width:50px;float: left;margin-right: 20px;">
+			<p style="padding:8px">PRABSUTHA@HOTMAIL.COM</p>
+		</div>
+		
+		<div>
+			<img src="./index_files/phone.png" alt="Dan" style="width:50px;float: left;margin-right: 20px;">
+			<p style="padding:8px">082-9666-300</p>
+		</div>
+		
+	</div>
+   
+  
+<!-- End page content -->
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>© copyright Teeruch Prabsutha</p>
+</footer>
+
+
+
+</body></html>
