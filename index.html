@@ -115,9 +115,25 @@
     <div id="div_timeline" class="timeline ng-scope" ng-controller="timelineController">
 
 
-				<!-- ngRepeat: timeline in timelines --><div ng-repeat="timeline in timelines" class="entry ng-scope">
+				<!-- ngRepeat: timeline in timelines -->
+				<div ng-repeat="timeline in timelines" class="entry ng-scope">
 					<div class="title">
-						<h3 class="ng-binding">Jun 2016-Present</h3>
+						<h3 class="ng-binding">Jun 2018-Present</h3>
+						<p class="ng-binding">Software Engineer</p>
+					</div>
+					<div class="body">
+						<p class="ng-binding">TISCO Bank Public Company Limited.</p>
+						<ul>
+							<!-- ngRepeat: resp in timeline.responsibilities -->
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Design application.</li>
+							<!-- end ngRepeat: resp in timeline.responsibilities -->
+							<li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Research technology.</li>
+						</ul>
+					</div>
+				</div>
+				<div ng-repeat="timeline in timelines" class="entry ng-scope">
+					<div class="title">
+						<h3 class="ng-binding">Jun 2016-May 2018</h3>
 						<p class="ng-binding">System analyst , Assistance manager</p>
 					</div>
 					<div class="body">
@@ -126,7 +142,8 @@
 							<!-- ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Domain expert for operation process.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Analyst and design development cycle.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Local resource management.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Prepare Functional and technical specification.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Consult business.</li><!-- end ngRepeat: resp in timeline.responsibilities --><li ng-repeat="resp in timeline.responsibilities" class="ng-binding ng-scope">Project : Team process improments.</li><!-- end ngRepeat: resp in timeline.responsibilities -->
 						</ul>
 					</div>
-				</div><!-- end ngRepeat: timeline in timelines --><div ng-repeat="timeline in timelines" class="entry ng-scope">
+				</div><!-- end ngRepeat: timeline in timelines -->
+				<div ng-repeat="timeline in timelines" class="entry ng-scope">
 					<div class="title">
 						<h3 class="ng-binding">Feb 2014-May 2016</h3>
 						<p class="ng-binding">Programmer</p>
@@ -224,6 +241,12 @@
 			<img src="./index_files/sw_park.jpg" alt="Dan" style="width:200px">
 			<p class="w3-opacity">Software park, Jun 2017</p>
 			<p>Scalable application for supports large transactions to more uses application.</p>
+		</div>
+		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
+			<h3>Single Page Application with Angular 6</h3>
+			<img src="./index_files/sw_park.jpg" alt="Dan" style="width:200px">
+			<p class="w3-opacity">Software park, 18 July 2018 - 20 July 2018</p>
+			<p>Single page application with angular 6</p>
 		</div>
 		<div class="w3-col l3 m6 w3-margin-bottom skil-box">
 			<h3>Management Essentials Program</h3>
